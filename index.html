@@ -5,29 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
+        /* Your existing styles remain unchanged */
+
+        /* Additional style for the Uno Purgatory button */
+        #unoButton {
+            background-color: #ff4500; /* Orange-red color */
             color: #fff;
-            text-align: center;
-            padding: 20px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
         }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+
+        #unoButton:hover {
+            background-color: #cc3700; /* Darker shade on hover */
         }
     </style>
 </head>
@@ -45,9 +37,20 @@
             <p>Email: example@email.com</p>
             <p>Phone: 123-456-7890</p>
         </section>
+        
+        <!-- Uno Purgatory Button -->
+        <button id="unoButton" onclick="enterUnoPurgatory()">Uno Purgatory</button>
     </main>
     <footer>
         <p>&copy; 2023 Simple Website</p>
     </footer>
+
+    <script>
+        // JavaScript function for Uno Purgatory button
+        function enterUnoPurgatory() {
+            alert("Welcome to Uno Purgatory! Prepare for a challenging game!");
+            // You can add more functionality here, like redirecting to a game page or starting a game.
+        }
+    </script>
 </body>
 </html>
